@@ -145,7 +145,7 @@ namespace cryptonote
         const uint64_t MAX_EXTRA_SIZE_V2 = 1024;
         const uint64_t MAX_EXTRA_SIZE_V2_HEIGHT = 1300000;
         const uint64_t MAX_EXTRA_SIZE_POOL = 10000; // Includes Hugin Messages in pool
-        const uint64_t MAX_EXTRA_SIZE_BLOCK = 128;  // Excludes Hugin Messages from blocks
+        const uint64_t MAX_EXTRA_SIZE_BLOCK = 128;  // Excludes Hugin Messages from block
 
         const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS = 1;
         const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS = DIFFICULTY_TARGET * CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS;
@@ -287,12 +287,9 @@ namespace cryptonote
             {0xd1, 0x9e, 0xf4, 0xb6, 0xa2, 0x72, 0x96, 0xc2, 0xaa, 0xe4, 0xae, 0x33, 0xde, 0x11, 0x4a, 0xaa}};
 
     const char *const SEED_NODES[] = {
-        "178.63.51.173", // node1
-        "", // 
-        "",  // 
-        "", // 
-        "", //
-        "" //
+        "178.63.51.173:23897", // node1
+        "95.217.5.214:23897", // node2
+        "95.217.210.177:23897" // node3
     };
 #endif
 
