@@ -71,7 +71,7 @@ namespace cryptonote
         * You should see your premine appear in the previously generated wallet.
 
         */
-        const char GENESIS_COINBASE_TX_HEX[] = "011401ff000183b1de1602f90e85fab87142b855740dde7ff00afe09610e3e9717cba27177cbf121b3ab7f21011c206e211a9eb24367860ef9a0effe9df5695e4f82c8ddb67fc22677a88b815d";
+        const char GENESIS_COINBASE_TX_HEX[] = "70e8f7fcffffffffffff010000210178c0f9eddbb74e1c372847f00e051e7c1c5e4cd5b776b7bf34c970e32e8e4182";
         static_assert(sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
