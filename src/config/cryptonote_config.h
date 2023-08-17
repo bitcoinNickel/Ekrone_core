@@ -246,11 +246,11 @@ namespace cryptonote
 
     // P2P Network Configuration Section - This defines our current P2P network version
     // and the minimum version for communication between nodes
-    const uint8_t P2P_CURRENT_VERSION = 5;
-    const uint8_t P2P_MINIMUM_VERSION = 4;
+    const uint8_t P2P_CURRENT_VERSION = 2;
+    const uint8_t P2P_MINIMUM_VERSION = 1;
 
     // This defines the minimum P2P version required for lite blocks propogation
-    const uint8_t P2P_LITE_BLOCKS_PROPOGATION_VERSION = 4;
+    const uint8_t P2P_LITE_BLOCKS_PROPOGATION_VERSION = 1;
 
     // This defines the number of versions ahead we must see peers before we start displaying
     // warning messages that we need to upgrade our software.
