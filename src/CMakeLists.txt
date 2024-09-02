@@ -50,7 +50,7 @@ else()
 endif()
 
 # Group the files together in IDEs
-source_group("" FILES $${common} ${crypto} ${cryptonote_core} ${cryptonote_protocol} ${ekroned} ${json_rpc_server} ${http} ${logging} ${miner} ${mnemonics} ${Nigel} ${NodeRpcProxy} ${p2p} ${rpc} ${serialization} ${syst} ${transfers} ${wallet} ${wallet_api} ${wallet_backend} ${zedwallet} ${zedwallet++} ${crypto_test} ${errors} ${utilities} ${sub_wallets})
+source_group("" FILES $${common} ${crypto} ${cryptonote_core} ${cryptonote_protocol} ${kryptokronad} ${json_rpc_server} ${http} ${logging} ${miner} ${mnemonics} ${Nigel} ${NodeRpcProxy} ${p2p} ${rpc} ${serialization} ${syst} ${transfers} ${wallet} ${wallet_api} ${wallet_backend} ${zedwallet} ${zedwallet++} ${crypto_test} ${errors} ${utilities} ${sub_wallets})
 
 # Define a group of files as a library to link against
 add_library(blockchain_explorer STATIC ${blockchain_explorer})
@@ -181,4 +181,4 @@ set_property(TARGET wallet_api PROPERTY OUTPUT_NAME "wallet-api")
 # e.g. make pool will build only ekroned and service
 add_custom_target(pool DEPENDS ekroned service)
 add_custom_target(solominer DEPENDS ekroned zedwallet miner)
-add_custom_target(cli DEPENDS ekroned zedwallet)
+add_custom_target(cli DEPENDS ekroned zedwall
